@@ -9,9 +9,9 @@ function tenfunction() { //counts to  ten
 }
 function string1() { // counts the amount of characters in a string
     let x = "This is a string";
-    let str = (x.length());
+    let str = (x.length);
     document.write(str).innerHTML;
-    document.getElementById("string").innerHTML;
+    document.getElementById("string").innerHTML = str;
 }
 var instruments = ["Guitars", "Drums", "Piano", "Bass"];
 var content = "";
@@ -53,10 +53,26 @@ document.getElementById("car").innerHTML = car.description();
 let taxt = "";
 for (let Y=0; Y < 10; Y++) { //continues a function once the variable is equal to 3
     if (Y == 3) {continue; }
-    text += "The number is " + Y;
-    document.getElementById("testi").innerHTML = text;
+    taxt += "The number is " + Y;
+    document.getElementById("testi").innerHTML = taxt;
 }
+let text = "";
+            for (let i = 0; i < 10; i++) {
+                if (i === 3) { break; }
+                text += "The number is " + i + "<br>";
+                document.getElementById("test").innerHTML = text;
+}
+        
 
+        V = "Not a test";
+        {
+            let V = "Test"
+            document.getElementById("type").innerHTML = V;
+        }
+        {
+            var V = "Another test";
+            document.getElementById("type").innerHTML = V;
+        }
 
 
 
