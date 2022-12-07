@@ -12,7 +12,7 @@
 				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
 			</div>
 		<script type="text/javascript">
-            var ajax = XMLHttpRequest();
+            var ajax = new XMLHttpRequest();
             ajax.open('GET', 'content.html');
             ajax.onreadystatechange = function() {
                 if (ajax.readyState == 4) {
