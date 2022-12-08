@@ -36,11 +36,14 @@ document.getElementById('add').addEventListener('click', add);
 show();
 
 function remove() {
-    var id = this.getAtrribute('remove');
+    var id = this.getAtrribute('id');
     var todos = get_todos();
     todos.splice(id, 1);
     localStorage.setItem('todo', JSON.stringify(todos));
     show();
 
     return false;
+}
+function myFunction() {
+    document.getElementById("ex").style = "font-size: 30px";
 }
